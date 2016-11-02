@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+   <link rel="stylesheet" href="svg.css">
+
+   <title>
+     Drawing
+   </title>
+</head>
+
+<svg width="100%" viewBox="0 0 450 200" style="background-color: #020627"
+ <rect x="470" y="150" width="50" height="140" fill="#999DCD"/>
+  <rect x="500" y="100" width="50" height="120" fill="#999DCD"/>
+  <animate id="moving" attributeName="x" from="450" to="-50" dur="6s"begin="0s;moving.end"/>
+</rect>
+
+  <rect x="0" y="180" width="450" height="20" fill="#5F3513"/>
+  <image x="10" y="157" width="30" height="30" xlink:href="http://www.picgifs.com/graphics/w/walking/graphics-walking-894167.gif">
+  <animate id="walk" attributeName="x" from="-50" to="450" dur="4s"begin="0s;walk.end"/>
+  </image>
+</svg>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="svg.js"></script>
+</body>
+</html>
