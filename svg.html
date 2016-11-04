@@ -9,16 +9,41 @@
    </title>
 </head>
 
-<svg width="100%" viewBox="0 0 450 200" style="background-color: #020627"
- <rect x="470" y="150" width="50" height="140" fill="#999DCD"/>
-  <rect x="500" y="100" width="50" height="120" fill="#999DCD"/>
-  <animate id="moving" attributeName="x" from="450" to="-50" dur="6s"begin="0s;moving.end"/>
-</rect>
+<svg width="100%" viewBox="0 0 450 200" style="background-color: #020627">
 
-  <rect x="0" y="180" width="450" height="20" fill="#5F3513"/>
-  <image x="10" y="157" width="30" height="30" xlink:href="http://www.picgifs.com/graphics/w/walking/graphics-walking-894167.gif">
-  <animate id="walk" attributeName="x" from="-50" to="450" dur="4s"begin="0s;walk.end"/>
-  </image>
+  <circle cx="-100" cy="25" r="90" fill="yellow">
+    <animate id="sunStart" attributeName="cx" from="-100" to="570" dur="30s" begin="0s;sunStart.end"/>
+  </circle>
+
+    <polygon points="100,130 90,145 95,145 85,160 90,160 80,175 120,175 110,160 115,160 105,145 110,145" fill="#44BD13">
+        <animateTransform id="TreeStart" attributeName="transform" attributeType="XML"type="translate"from="520"to="-250"dur="6s"begin="0s;TreeStart.end"/>
+    </polygon>
+
+    <polygon points="100,130 90,145 95,145 85,160 90,160 80,175 120,175 110,160 115,160 105,145 110,145" fill="#44BD13">
+        <animateTransform id="TreeStart1" attributeName="transform" attributeType="XML"type="translate"from="560"to="-250"dur="6.5s"begin="0s;TreeStart1.end"/>
+    </polygon>
+
+    <polygon points="100,130 90,145 95,145 85,160 90,160 80,175 120,175 110,160 115,160 105,145 110,145" fill="#44BD13">
+        <animateTransform id="TreeStart2" attributeName="transform" attributeType="XML"type="translate"from="600"to="-250"dur="7s"begin="0s;TreeStart2.end"/>
+    </polygon>
+
+    <polygon points="100,130 90,145 95,145 85,160 90,160 80,175 120,175 110,160 115,160 105,145 110,145" fill="#44BD13">
+        <animateTransform id="TreeStart3" attributeName="transform" attributeType="XML"type="translate"from="640"to="-250"dur="7.5s"begin="0s;TreeStart3.end"/>
+    </polygon>
+
+    <polygon points="100,130 90,145 95,145 85,160 90,160 80,175 120,175 110,160 115,160 105,145 110,145" fill="#44BD13">
+        <animateTransform id="TreeStart4" attributeName="transform" attributeType="XML"type="translate"from="680"to="-250"dur="8s"begin="0s;TreeStart4.end"/>
+    </polygon>
+
+    <polygon points="100,130 90,145 95,145 85,160 90,160 80,175 120,175 110,160 115,160 105,145 110,145" fill="#44BD13">
+        <animateTransform id="TreeStart5" attributeName="transform" attributeType="XML"type="translate"from="720"to="-250"dur="8.5s"begin="0s;TreeStart5.end"/>
+    </polygon>
+
+  <rect x="0" y="180" width="450" height="20" fill="#5B4911"/>
+  <image x="-50" y="157" width="30" height="30" xlink:href="http://www.picgifs.com/graphics/w/walking/graphics-walking-894167.gif">
+  <animate id="walk" attributeName="x" from="-50" to="450" dur="8s" begin="0s;walk.end"/>
+</image>
+
 </svg>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
