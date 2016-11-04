@@ -10,9 +10,11 @@
 </head>
 
 <svg width="100%" viewBox="0 0 450 200" style="background-color: #020627">
+  <animate attributeName="fill" from="lightbluesky" to="#020627" dur="40s" repeatCount="indefinite"/>
 
   <circle cx="-100" cy="25" r="90" fill="yellow">
-    <animate id="sunStart" attributeName="cx" from="-100" to="570" dur="30s" begin="0s;sunStart.end"/>
+    <animate id="sunStart" attributeName="cx" from="-100" to="570" dur="20s" begin="0s;sunStart.end"/>
+    <animate attributeName="fill" from="yellow" to="#BDB8A9" dur="40s" repeatCount="indefinite"/>
   </circle>
 
     <polygon points="100,130 90,145 95,145 85,160 90,160 80,175 120,175 110,160 115,160 105,145 110,145" fill="#44BD13">
@@ -40,8 +42,9 @@
     </polygon>
 
   <rect x="0" y="180" width="450" height="20" fill="#5B4911"/>
-  <image x="-50" y="157" width="30" height="30" xlink:href="http://www.picgifs.com/graphics/w/walking/graphics-walking-894167.gif">
-  <animate id="walk" attributeName="x" from="-50" to="450" dur="8s" begin="0s;walk.end"/>
+
+  <image x="10" y="157" width="30" height="30" xlink:href="http://www.picgifs.com/graphics/w/walking/graphics-walking-894167.gif">
+  <animate id="walk" attributeName="x" from="10" to="450" dur="8s" begin="onclick"/>
 </image>
 
 </svg>
